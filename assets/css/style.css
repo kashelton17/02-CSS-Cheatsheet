@@ -1,0 +1,79 @@
+:root {
+    --dark: rgb(55, 53, 66);
+    --purple: rgba(232, 102, 236, 1);
+}
+
+body {
+    background: var(--dark);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: var(--purple);
+}
+
+main {
+    color: var(--purple);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.box {
+  flex: 1 0 0;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  border-color: white;
+  border-style: dashed;
+  border-width: 1px;
+  width: 33%;
+}
+
+.box h2 {
+    position: relative;
+    background:var(--dark);
+    border: solid white 1px;
+    min-width: 200px;
+    padding: 10px;
+    margin-top: -20px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.box ul {
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.box ul:hover, .box ul:hover .box h2 {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+#Made::after {
+    content: "\2764 ";
+    color: red;
+}
